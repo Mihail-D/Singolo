@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Lato Black";
+  src: url("assets/fonts/lato-black-webfont.woff2") format("woff2"),
+    url("assets/fonts/lato-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato Bold";
+  src: url("assets/fonts/lato-bold-webfont.woff2") format("woff2"),
+    url("assets/fonts/lato-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato Light";
+  src: url("assets/fonts/lato-light-webfont.woff2") format("woff2"),
+    url("assets/fonts/lato-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("assets/fonts/lato-regular-webfont.woff2") format("woff2"),
+    url("assets/fonts/lato-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+.main-header {
+  display: flex;
+  margin: 0 auto;
+  width: 1020px;
+  height: 95px;
+  background-color: #2d303a;
+}
+
+.main-header__logo {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 31px;
+  width: 115px;
+  height: 20px;
+  color: #ffffff;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+letter-spacing: -0.4px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.main-header__logo::after {
+  position: absolute;
+  content: '*';
+  color: #f06c64;
+}
