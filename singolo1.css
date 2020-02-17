@@ -36,6 +36,7 @@ body {
 
 .main-header {
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   width: 1020px;
   height: 95px;
@@ -52,13 +53,52 @@ body {
   font-family: "Lato", Arial, Helvetica, sans-serif;
   font-size: 25px;
   font-weight: 500;
-letter-spacing: -0.4px;
+  letter-spacing: -0.4px;
   text-transform: uppercase;
   color: #fff;
 }
 
 .main-header__logo::after {
   position: absolute;
-  content: '*';
+  content: "*";
   color: #f06c64;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-right: 38px;
+  width: 373px;
+  padding: 0;
+  height: 9px;
+  list-style: none;
+}
+
+.main-nav__link {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 6.32px;
+  text-transform: uppercase;
+}
+
+.main-nav__link--active {
+  color: #f06c64;
+}
+
+.main-nav__link:hover {
+  color: #eb5055;
+}
+
+.main-nav :not(:last-child) ::after {
+  position: absolute;
+  top: 0;
+  right: -16px;
+  content: ".";
+  color: #494e62;
+  font-size: 16px;
 }
