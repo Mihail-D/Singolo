@@ -35,10 +35,10 @@ body {
 }
 
 .main-header {
+  margin: 0 auto;
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
   width: 1020px;
   height: 95px;
   background-color: #2d303a;
@@ -46,11 +46,11 @@ body {
 
 .main-header::after {
   position: absolute;
-  content: "";
   bottom: 0;
   left: 0;
   width: 1020px;
   height: 6px;
+  content: "";
   background-color: #323746;
 }
 
@@ -63,9 +63,9 @@ body {
   font-family: "Lato", Arial, Helvetica, sans-serif;
   font-size: 25px;
   font-weight: 500;
-  letter-spacing: -0.4px;
+  letter-spacing: -.4px;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
 }
 
 .main-header__logo::after {
@@ -75,12 +75,12 @@ body {
 }
 
 .main-nav {
-  display: flex;
-  justify-content: space-between;
   margin-top: 40px;
   margin-right: 38px;
-  width: 373px;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 373px;
   height: 9px;
   list-style: none;
 }
@@ -88,12 +88,12 @@ body {
 .main-nav__link {
   position: relative;
   text-decoration: none;
-  color: #ffffff;
   font-family: "Lato", Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 6.32px;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .main-nav__link--active {
@@ -105,9 +105,9 @@ body {
 }
 
 .main-nav :not(:last-child) ::after {
-  position: absolute;
   top: 0;
   right: -16px;
+  position: absolute;
   content: ".";
   color: #494e62;
   font-size: 16px;
@@ -129,12 +129,12 @@ body {
 }
 
 .slider::after {
-  position: absolute;
-  content: "";
   bottom: 0;
   left: 0;
+  position: absolute;
   width: 1020px;
   height: 15px;
+  content: "";
   background-color: #ea676b;
 }
 
@@ -144,7 +144,7 @@ body {
   height: 27px;
   background-color: #f06c64;
   border: none;
-  opacity: 0.25;
+  opacity: .25;
 }
 
 .slider-button--left {
@@ -157,7 +157,7 @@ body {
 }
 
 .slider-button:hover {
-  opacity: 0.5;
+  opacity: .5;
 }
 
 .slider-button:active {
@@ -186,13 +186,13 @@ body {
 }
 
 .services::after {
-  position: absolute;
-  content: "";
   bottom: 0;
   left: 0;
+  position: absolute;
   width: 1020px;
   height: 6px;
-  background-color: #fff;
+  content: "";
+  background-color: #ffffff;
 }
 
 .services__caption {
@@ -204,7 +204,7 @@ body {
   font-family: "Lato Black", Arial, Helvetica, sans-serif;
   font-size: 30px;
   font-weight: 400;
-  letter-spacing: -0.1px;
+  letter-spacing: -.1px;
 }
 
 .services__description {
@@ -221,10 +221,10 @@ body {
 }
 
 .services-list {
-  display: flex;
-  justify-content: space-between;
   margin: 0 auto;
   margin-top: 41px;
+  display: flex;
+  justify-content: space-between;
   width: 939px;
   height: 209px;
 }
@@ -237,10 +237,10 @@ body {
 }
 
 .services-card {
+  padding: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0;
   height: 86px;
 }
 
