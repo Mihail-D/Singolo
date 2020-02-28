@@ -192,16 +192,24 @@ a {
 .personal-info-section {
   margin: 0 auto;
   margin-top: 40px;
-  padding: 0;
+  margin-left: 40px;
   display: flex;
-  justify-content: space-between;
-  width: 940px;
+  justify-content: flex-start;
+  width: 941px;
   height: 443px;
 }
 
 .personal-info-item {
   width: 301px;
   height: 443px;
+}
+
+.personal-info-item:nth-child(2) {
+  margin-left: 19px;
+}
+
+.personal-info-item:nth-child(3) {
+  margin-left: 21px;
 }
 
 .personal-info-item__caption {
@@ -234,7 +242,6 @@ a {
 
 .social {
   margin-top: 34px;
-
   padding: 0;
   display: flex;
   justify-content: space-between;
