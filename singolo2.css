@@ -46,6 +46,7 @@ a {
 }
 
 .portfolio-block {
+  position: relative;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -117,17 +118,149 @@ a {
   background-color: #ffffff;
 }
 
+.portfolio-nav__item:active {
+  box-shadow: 0 0 10px #9ecaed;
+}
+
 .gallery {
   margin: 0 auto;
   margin-top: 3px;
-  margin-bottom: 69px;
+  margin-bottom: 47px;
   width: 940px;
-  height: 605px;
+  height: 621px;
   display: flex;
   justify-content: space-between;
-  align-content: space-between;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
-.gallery a {
+.about-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1020px;
+  height: 735px;
+  background-color: #f2f2f2;
+}
+
+.about-block::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 1020px;
+  height: 6px;
+  background-color: #323746;
+}
+
+.about-block::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 1020px;
+  height: 6px;
+  background-color: #ffffff;
+}
+
+.about-block__caption {
+  margin-top: 75px;
+  margin-left: 40px;
+  width: 140px;
+  height: 23px;
+  color: #666d89;
+  font-family: "Lato Black", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 17.86px;
+}
+
+.about-block__motto {
+  margin-top: -4px;
+  margin-left: 40px;
+  width: 940px;
+  height: 47px;
+  color: #767e9e;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: -0.21px;
+}
+
+.personal-info-section {
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  height: 443px;
+}
+
+.personal-info-item {
+  width: 301px;
+  height: 443px;
+}
+
+.personal-info-item__caption {
+  margin-top: 14px;
+  width: 100%;
+  height: 15px;
+  color: #666d89;
+  font-family: "Lato Black", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 17.86px;
+  letter-spacing: -0.1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.personal-info-item__motto {
+  margin-top: -5px;
+  width: 298px;
+  height: 32px;
+  color: #767e9e;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 21.56px;
+  letter-spacing: -0.1px;
+}
+
+.social {
+  margin-top: 34px;
+
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 154px;
+  height: 32px;
+}
+
+.social-item {
+  width: 31px;
+  border: 1px solid #666d89;
+  border-radius: 50%;
+}
+
+.social-item:hover {
+  background-color: #fff;
+  border: px solid #000000;
+}
+
+.social-item:active {
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+.social-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
