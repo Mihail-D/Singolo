@@ -255,6 +255,30 @@ a {
   border-radius: 50%;
 }
 
+.social-item:nth-child(1) {
+  background: url("assets/images/social_facebook.png") no-repeat;
+  background-size: 8px 14px;
+  background-position: 47.5% 45%;
+}
+
+.social-item:nth-child(2) {
+  background: url("assets/images/social_google+.png") no-repeat;
+  background-size: 14px 14px;
+  background-position: 47% 45%;
+}
+
+.social-item:nth-child(3) {
+  background: url("assets/images/social_twitter.png") no-repeat;
+  background-size: 14px 12px;
+  background-position: 46% 45%;
+}
+
+.social-item:nth-child(4) {
+  background: url("assets/images/social_linkedin.png") no-repeat;
+  background-size: 14px 14px;
+  background-position: 47% 45%;
+}
+
 .social-item:hover {
   background-color: #fff;
   border: px solid #000000;
