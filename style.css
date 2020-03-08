@@ -813,6 +813,11 @@ a {
   letter-spacing: -0.1px;
 }
 
+.copyright-sign a,
+.copyright-sign a:visited {
+  color: #5b6179;
+}
+
 .social-footer {
   margin-top: 19px;
   margin-right: 39px;
