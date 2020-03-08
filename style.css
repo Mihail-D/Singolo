@@ -122,12 +122,12 @@ a {
 
 .slider-button--left {
   margin-left: 42px;
-  background-image: url("/assets/images/slider-arrow-left.svg");
+  background-image: url("../assets/images/slider-arrow-left.svg");
 }
 
 .slider-button--right {
   margin-left: 55px;
-  background-image: url("/assets/images/slider-arrow-right.svg");
+  background-image: url("../assets/images/slider-arrow-right.svg");
 }
 
 .slider-button:hover {
