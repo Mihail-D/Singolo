@@ -30,7 +30,7 @@ a {
   font-family: "Lato", Arial, Helvetica, sans-serif;
   font-size: 25px;
   font-weight: 500;
-  letter-spacing: -.4px;
+  letter-spacing: -.36px;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -54,11 +54,11 @@ a {
 
 .main-nav__link {
   position: relative;
-  text-decoration: none;
   font-family: "Lato", Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 6.32px;
+  letter-spacing: .12px;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -97,22 +97,13 @@ a {
   justify-content: flex-start;
   align-items: center;
   width: 1020px;
-  height: 600px;
+  height: 585px;
   background-color: #f06c64;
-}
-
-.slider::after {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  width: 1020px;
-  height: 15px;
-  content: "";
-  background-color: #ea676b;
+  border-bottom: 15px solid #ea676b;
 }
 
 .slider-button {
-  margin-top: -12px;
+  margin-top: 4px;
   width: 16px;
   height: 27px;
   background-color: #f06c64;
@@ -139,7 +130,7 @@ a {
 }
 
 .slider-image {
-  margin-top: -12px;
+  margin-top: 3px;
 }
 
 .slider-image--vertical {
@@ -489,7 +480,7 @@ a {
   padding: 0;
   display: flex;
   justify-content: space-between;
-  width: 154px;
+  width: 153px;
   height: 32px;
 }
 
@@ -502,25 +493,25 @@ a {
 .social-item:nth-child(1) {
   background: url("assets/images/social_facebook.png") no-repeat;
   background-size: 8px 14px;
-  background-position: 47.5% 45%;
+  background-position: 50% 45%;
 }
 
 .social-item:nth-child(2) {
   background: url("assets/images/social_google+.png") no-repeat;
   background-size: 14px 14px;
-  background-position: 47% 45%;
+  background-position: 50% 45%;
 }
 
 .social-item:nth-child(3) {
   background: url("assets/images/social_twitter.png") no-repeat;
   background-size: 14px 12px;
-  background-position: 46% 45%;
+  background-position: 50% 45%;
 }
 
 .social-item:nth-child(4) {
   background: url("assets/images/social_linkedin.png") no-repeat;
   background-size: 14px 14px;
-  background-position: 47% 45%;
+  background-position: 50% 45%;
 }
 
 .social-item:hover {
@@ -843,13 +834,13 @@ a {
 .social-footer__item:nth-child(3) {
   background: url("assets/images/social_twitter.png") no-repeat;
   background-size: 14px 12px;
-  background-position: 46% 53%;
+  background-position: 50% 53%;
 }
 
 .social-footer__item:nth-child(4) {
   background: url("assets/images/social_linkedin.png") no-repeat;
   background-size: 14px 14px;
-  background-position: 47% 54.5%;
+  background-position: 50% 54.5%;
 }
 
 .social-footer__item:hover {
