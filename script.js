@@ -18,7 +18,7 @@ let sliderButtonRight = document.querySelector(".slider-button--right");
 let sliderItemsSet = document.querySelectorAll(".slider-image__wrapper");
 let sliderCounter = 0;
 
-sliderButtonLeft.addEventListener("click", function () {
+sliderButtonLeft.addEventListener("click", function() {
 	if (sliderCounter >= sliderItemsSet.length) {
 		sliderCounter = 0;
 	}
@@ -33,7 +33,7 @@ sliderButtonLeft.addEventListener("click", function () {
 	sliderCounter++;
 });
 
-sliderButtonRight.addEventListener("click", function () {
+sliderButtonRight.addEventListener("click", function() {
 	if (sliderCounter === 0) {
 		sliderCounter = sliderItemsSet.length - 1;
 	}
@@ -61,19 +61,19 @@ let sliderPhoneScreenTwo_Off = document.querySelector(
 	".slider__screen-off--horizontal"
 );
 
-sliderPhoneScreenOne.addEventListener("click", function () {
+sliderPhoneScreenOne.addEventListener("click", function() {
 	sliderPhoneScreenOne_Off.classList.toggle("visually-hidden");
 });
 
-sliderPhoneScreenOne_Off.addEventListener("click", function () {
+sliderPhoneScreenOne_Off.addEventListener("click", function() {
 	sliderPhoneScreenOne_Off.classList.add("visually-hidden");
 });
 
-sliderPhoneScreenTwo.addEventListener("click", function () {
+sliderPhoneScreenTwo.addEventListener("click", function() {
 	sliderPhoneScreenTwo_Off.classList.toggle("visually-hidden");
 });
 
-sliderPhoneScreenTwo_Off.addEventListener("click", function () {
+sliderPhoneScreenTwo_Off.addEventListener("click", function() {
 	sliderPhoneScreenTwo_Off.classList.add("visually-hidden");
 });
 
@@ -94,7 +94,7 @@ galleryMenu.addEventListener("click", event => {
 
 let gallery = document.querySelector(".gallery");
 
-gallery.addEventListener("click", function () {
+gallery.addEventListener("click", function() {
 	gallery
 		.querySelectorAll(".gallery img")
 		.forEach(el => el.classList.remove("gallery__image"));
@@ -104,7 +104,7 @@ gallery.addEventListener("click", function () {
 
 // перемешивание картинок в галлерее
 
-galleryMenu.addEventListener("click", function () {
+galleryMenu.addEventListener("click", function() {
 	for (var i = gallery.children.length; i >= 0; i--) {
 		if (event.target.classList.contains("portfolio-nav__link")) {
 			gallery.appendChild(gallery.children[(Math.random() * i) | 0]);
@@ -114,36 +114,46 @@ galleryMenu.addEventListener("click", function () {
 
 let submitForm = document.querySelector(".communication-block__about-us");
 let modalBlock = submitForm.querySelector(".modal-window-wrapper");
-let submitButton = submitForm.querySelector(".communication-block__submit-button");
-let modalSubmitButton = submitForm.querySelector(".modal-window__submit-button");
+let submitButton = submitForm.querySelector(
+	".communication-block__submit-button"
+);
+let modalSubmitButton = submitForm.querySelector(
+	".modal-window__submit-button"
+);
 
-
-let subjectInputField = document.querySelector(".communication-block__input--subject");
-let describeInputField = document.querySelector(".communication-block__text-area");
+let subjectInputField = document.querySelector(
+	".communication-block__input--subject"
+);
+let describeInputField = document.querySelector(
+	".communication-block__text-area"
+);
 
 let modalBlockSubject = modalBlock.querySelector(".modal-window__subject");
 let modalBlockDescribe = modalBlock.querySelector(".modal-window__describe");
 
+// submitForm.addEventListener("submit", function(el) {
+// 	el.preventDefault();
+// });
 
 // появление модального окна и обработка формы
-submitButton.addEventListener("click", function (el) {
+submitForm.addEventListener("submit", function (el) {
 	el.preventDefault();
 	modalBlock.classList.remove("visually-hidden");
 
 	if (subjectInputField.value.length > 0) {
 		modalBlockSubject.innerHTML = "Тема: " + subjectInputField.value;
 	} else {
-		"Без темы";
+		("Без темы");
 	}
 
 	if (describeInputField.value.length > 0) {
 		modalBlockDescribe.innerHTML = "Описание: " + describeInputField.value;
 	} else {
-		"Без описания";
+		("Без описания");
 	}
 });
 
 //закрытие модального окна
-modalSubmitButton.addEventListener("click", function () {
+modalSubmitButton.addEventListener("click", function() {
 	modalBlock.classList.add("visually-hidden");
 });
