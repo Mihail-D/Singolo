@@ -10,6 +10,7 @@
 		<title>Singolo project</title>
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="fonts.css" />
+		<link rel="shortcut icon" href="">
 	</head>
 
 	<body>
@@ -35,6 +36,7 @@
 		</header>
 
 		<main class="main-block" id="home">
+
 			<div class="slider">
 				<button class="slider-button slider-button--left"></button>
 
@@ -54,24 +56,6 @@
 				<div class="slider__screen-off--vertical visually-hidden"></div>
 				<div class="slider__screen-off--horizontal visually-hidden"></div>
 
-
-				<!-- =============================================== -->
-				<!-- <div class="slider-image__wrapper slider-image__wrapper--third visually-hidden">
-					<img class="slider-image slider-image--vertical" src="assets/images/slider_background_2.png"
-						alt="phone-vertical" width="797px" height="483" />
-				</div>
-
-				<div class="slider-image__wrapper slider-image__wrapper--fourth visually-hidden">
-					<img class="slider-image slider-image--vertical" src="assets/images/slider_background_2.png"
-						alt="phone-vertical" width="797px" height="483" />
-				</div>
-
-				<div class="slider-image__wrapper slider-image__wrapper--fifth visually-hidden">
-					<img class="slider-image slider-image--vertical" src="assets/images/slider_background_2.png"
-						alt="phone-vertical" width="797px" height="483" />
-				</div> -->
-
-				<!-- =============================================== -->
 				<button class="slider-button slider-button--right"></button>
 			</div>
 
@@ -187,7 +171,6 @@
 					<img src="assets/images/gallery_image_11.png" alt="gallery picture" width="220" height="187" />
 					<img src="assets/images/gallery_image_12.png" alt="gallery picture" width="220" height="187" />
 				</div>
-
 			</div>
 
 			<div class="about-block" id="about">
@@ -286,7 +269,7 @@
 						<input class="communication-block__input" type="email" placeholder="Email (Required)" required />
 						<input class="communication-block__input communication-block__input--subject" type="text"
 							placeholder="Subject" />
-						<textarea class="communication-block__text-area" name="text-field"
+						<textarea class="communication-block__text-area" name="text-field" maxlength="140"
 							placeholder="Describe your project in detail..." cols="30" rows="10"></textarea>
 						<button class="communication-block__submit-button" type="submit">
 							Submit
@@ -297,7 +280,7 @@
 						<div class="modal-window">
 							<h3 class="modal-window__caption"><b>Письмо отправлено</b></h3>
 							<span class="modal-window__subject">Без темы</span>
-							<span class="modal-window__describe">Без описания</span>
+							<p class="modal-window__describe">Без описания</p>
 							<button class="modal-window__submit-button" type="submit">OK</button>
 						</div>
 					</div>
