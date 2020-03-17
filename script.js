@@ -77,11 +77,7 @@ let galleryImageSet = gallery.querySelectorAll(".gallery img");
 gallery.addEventListener("click", function () {
 	let target = event.target;
 	for (let i of galleryImageSet) {
-		if (i !== target) {
-			i.classList.remove("gallery__image");
-		} else if (target) {
-			event.target.classList.toggle("gallery__image");
-		}
+		(i !== target) ? i.classList.remove("gallery__image"): event.target.classList.toggle("gallery__image");
 	}
 });
 
@@ -102,32 +98,25 @@ let modalSubmitButton = submitForm.querySelector(
 	".modal-window__submit-button"
 );
 
-let subjectInputField = document.querySelector(
+let subjectField = document.querySelector(
 	".communication-block__input--subject"
 );
-let describeInputField = document.querySelector(
+let describeField = document.querySelector(
 	".communication-block__text-area"
 );
 
-let modalBlockSubject = modalBlock.querySelector(".modal-window__subject");
-let modalBlockDescribe = modalBlock.querySelector(".modal-window__describe");
+let modalSubject = modalBlock.querySelector(".modal-window__subject");
+let modalDescribe = modalBlock.querySelector(".modal-window__describe");
 
 // появление модального окна и обработка формы
 submitForm.addEventListener("submit", function (el) {
 	el.preventDefault();
 	modalBlock.classList.remove("visually-hidden");
 
-	if (subjectInputField.value.length > 0) {
-		modalBlockSubject.innerHTML = "Тема: " + subjectInputField.value;
-	} else {
-		("Без темы");
-	}
+	(subjectField.value.length > 0) ? modalSubject.innerHTML = "Тема: " + subjectField.value: ("Без темы");
 
-	if (describeInputField.value.length > 0) {
-		modalBlockDescribe.innerHTML = "Описание: " + describeInputField.value;
-	} else {
-		("Без описания");
-	}
+	(describeField.value.length > 0) ? modalDescribe.innerHTML = "Описание: " + describeField.value: "Без описания";
+
 });
 
 //закрытие модального окна
