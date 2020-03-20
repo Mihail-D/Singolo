@@ -22,17 +22,36 @@ sliderButtonLeft.addEventListener("click",function ()
 {
 	for (let i = 0; i < sliderItemsSet.length; i++)
 	{
-		sliderItemsSet[i].classList.toggle("visually-hidden");
-	}
-});
+		sliderItemsSet[i].classList.remove('slide-to-right');
 
-sliderButtonRight.addEventListener("click",function ()
-{
+	}
+
 	for (let i = 0; i < sliderItemsSet.length; i++)
 	{
-		sliderItemsSet[i].classList.toggle("visually-hidden");
+
+		sliderItemsSet[i].classList.toggle('slide-to-left');
+
 	}
+
+
+
+
+
+
 });
+
+
+
+
+
+
+// sliderButtonRight.addEventListener("click",function ()
+// {
+// 	for (let i = 0; i < sliderItemsSet.length; i++)
+// 	{
+// 		sliderItemsSet[i].classList.toggle("visually-hidden");
+// 	}
+// });
 
 // Выключение экранов
 
