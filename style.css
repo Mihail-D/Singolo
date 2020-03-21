@@ -186,6 +186,7 @@ input[type="radio"].visually-hidden {
 .slider__screen-off--vertical,
 .slider__screen-off--horizontal {
 	position: absolute;
+	z-index: 3;
 	background-color: #000000;
 }
 

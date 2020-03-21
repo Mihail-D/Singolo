@@ -22,36 +22,22 @@ sliderButtonLeft.addEventListener("click",function ()
 {
 	for (let i = 0; i < sliderItemsSet.length; i++)
 	{
-		sliderItemsSet[i].classList.remove('slide-to-right');
-
+		sliderItemsSet[i].classList.toggle('visually-hidden');
 	}
-
-	for (let i = 0; i < sliderItemsSet.length; i++)
-	{
-
-		sliderItemsSet[i].classList.toggle('slide-to-left');
-
-	}
-
-
-
-
-
-
 });
 
 
 
+sliderButtonRight.addEventListener("click",function ()
+{
+	for (let i = 0; i < sliderItemsSet.length; i++)
+	{
+		sliderItemsSet[i].classList.toggle('visually-hidden');
+	}
+});
 
 
 
-// sliderButtonRight.addEventListener("click",function ()
-// {
-// 	for (let i = 0; i < sliderItemsSet.length; i++)
-// 	{
-// 		sliderItemsSet[i].classList.toggle("visually-hidden");
-// 	}
-// });
 
 // Выключение экранов
 
