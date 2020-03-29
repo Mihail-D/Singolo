@@ -10,12 +10,38 @@
 		<title>Singolo project</title>
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="fonts.css" />
+		<link rel="stylesheet" href="style_768.css" />
+		<link rel="stylesheet" href="style_375.css" />
 		<link rel="shortcut icon" href="">
 	</head>
 
 	<body>
+
+		<div class="mobile-menu visually-hidden">
+			<h2 class="mobile-header__logo">singolo</h2>
+			<ul class="mobile-nav" id="mobile-nav">
+				<li class="mobile-nav__item">
+					<a class="mobile-nav__link mobile-nav__link--active" href="#home">home</a>
+				</li>
+				<li class="mobile-nav__item">
+					<a class="mobile-nav__link" href="#services">services</a>
+				</li>
+				<li class="mobile-nav__item">
+					<a class="mobile-nav__link" href="#portfolio">portfolio</a>
+				</li>
+				<li class="mobile-nav__item">
+					<a class="mobile-nav__link" href="#about">about</a>
+				</li>
+				<li class="mobile-nav__item">
+					<a class="mobile-nav__link" href="#contact">contact</a>
+				</li>
+			</ul>
+		</div>
+
+
 		<header class="main-header">
 			<h1 class="main-header__logo">singolo</h1>
+			<a><img class="burger-menu__button" src="assets/images/burger-menu.svg" alt="burger" width='25' height='35'></a>
 			<ul class="main-nav" id="main-nav">
 				<li class="main-nav__item">
 					<a class="main-nav__link main-nav__link--active" href="#home">home</a>
@@ -42,14 +68,38 @@
 
 
 				<div class="slider-image__wrapper slider-image__wrapper--first ">
-					<img class="slider-image slider-image--vertical" src="assets/images/phone-vert.png" alt="phone-vertical"
-						width="240" height="483" />
-					<img class="slider-image slider-image--horizontal" src="assets/images/phone-hor.png" alt="phone-horizontal"
-						width="484" height="240" />
+
+					<picture>
+						<source type="image/png" media="(min-width: 1020px)" srcset="assets/images/phone-vert.png" />
+
+						<source type="image/png" media="(min-width: 768px) AND (max-width: 1019px)"
+							srcset="assets/images/phone-vert_768.png" />
+
+						<source type="image/png" media="(min-width: 375px) AND (max-width: 767px)"
+							srcset="assets/images/phone-vert_375.png" />
+
+						<img class="slider-image slider-image--vertical" src="assets/images/phone-vert.png" alt="phone-vertical"
+							width="240" height="483" />
+					</picture>
+
+
+					<picture>
+						<source type="image/png" media="(min-width: 1020px)" srcset="assets/images/phone-hor.png" />
+
+						<source type="image/png" media="(min-width: 768px) AND (max-width: 1019px)"
+							srcset="assets/images/phone-hor_768.png" />
+
+						<source type="image/png" media="(min-width: 375px) AND (max-width: 767px)"
+							srcset="assets/images/phone-hor_375.png" />
+
+						<img class="slider-image slider-image--horizontal" src="assets/images/phone-hor.png" alt="phone-horizontal"
+							width="484" height="240" />
+					</picture>
+
 					<div class="slider__screen-off--vertical visually-hidden"></div>
 					<div class="slider__screen-off--horizontal visually-hidden"></div>
-				</div>
 
+				</div>
 				<div class="slider-image__wrapper slider-image__wrapper--second visually-hidden">
 					<img class="slider-image slider-image--vertical" src="assets/images/slider_background_2.png"
 						alt="phone-vertical" width="797px" height="483" />
@@ -58,6 +108,8 @@
 
 				<button class="slider-button slider-button--right"></button>
 			</div>
+
+
 
 			<div class="services" id="services">
 				<h2 class="services__caption">Our Services</h2>
@@ -69,67 +121,67 @@
 				</p>
 
 				<div class="services-list">
-					<div class="services-list__item">
-						<div class="services-card">
-							<div class="services-card__text-wrapper">
-								<h3 class="services-card__caption">Custom Design</h3>
-								<p class="services-card__description">
-									Curabitur vestibulum eget mauris quis laoreet. Phasellus in
-									quam laoreet, viverra lacus ut, ultrices velit.
-								</p>
-							</div>
-						</div>
-						<div class="services-card">
-							<div class="services-card__text-wrapper">
-								<h3 class="services-card__caption">Responsive Layout</h3>
-								<p class="services-card__description">
-									Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas
-									blandit nunc ligula. Prae&shy;sent elit leo.
-								</p>
-							</div>
+
+					<div class="services-card">
+						<div class="services-card__text-wrapper">
+							<h3 class="services-card__caption">Custom Design</h3>
+							<p class="services-card__description">
+								Curabitur vestibulum eget mauris quis laoreet. Phasellus in
+								quam laoreet, viverra lacus ut, ultrices velit.
+							</p>
 						</div>
 					</div>
 
-					<div class="services-list__item">
-						<div class="services-card">
-							<div class="services-card__text-wrapper">
-								<h3 class="services-card__caption">Inovative Ideas</h3>
-								<p class="services-card__description">
-									Quisque luctus, quam eget molestie com&shy;modo, lacus purus
-									cursus purus, nec rutrum tellus dolor id lorem.
-								</p>
-							</div>
-						</div>
-						<div class="services-card">
-							<div class="services-card__text-wrapper">
-								<h3 class="services-card__caption">24 / 7 Support</h3>
-								<p class="services-card__description">
-									Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi.
-									Nulla a sem erat. Pellen&shy;tesque egestas venenatis lorem .
-								</p>
-							</div>
+					<div class="services-card">
+						<div class="services-card__text-wrapper">
+							<h3 class="services-card__caption">Inovative Ideas</h3>
+							<p class="services-card__description">
+								Quisque luctus, quam eget molestie com&shy;modo, lacus purus
+								cursus purus, nec rutrum tellus dolor id lorem.
+							</p>
 						</div>
 					</div>
-					<div class="services-list__item">
-						<div class="services-card">
-							<div class="services-card__text-wrapper">
-								<h3 class="services-card__caption">Love Is The Answer</h3>
-								<p class="services-card__description">
-									Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
-									turpis, et consequat felis. Quisque condimentum.
-								</p>
-							</div>
-						</div>
-						<div class="services-card">
-							<div class="services-card__text-wrapper">
-								<h3 class="services-card__caption">Feel Like A Star</h3>
-								<p class="services-card__description">
-									Quisque hendrerit purus dapibus, ornare nibh vitae, viverra
-									nibh. Fusce vitae aliquam tellus.
-								</p>
-							</div>
+
+					<div class="services-card">
+						<div class="services-card__text-wrapper">
+							<h3 class="services-card__caption">Love Is The Answer</h3>
+							<p class="services-card__description">
+								Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
+								turpis, et consequat felis. Quisque condimentum.
+							</p>
 						</div>
 					</div>
+
+					<div class="services-card">
+						<div class="services-card__text-wrapper">
+							<h3 class="services-card__caption">Responsive Layout</h3>
+							<p class="services-card__description">
+								Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas
+								blandit nunc ligula. Prae&shy;sent elit leo.
+							</p>
+						</div>
+					</div>
+
+					<div class="services-card">
+						<div class="services-card__text-wrapper">
+							<h3 class="services-card__caption">24 / 7 Support</h3>
+							<p class="services-card__description">
+								Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi.
+								Nulla a sem erat. Pellen&shy;tesque egestas venenatis lorem .
+							</p>
+						</div>
+					</div>
+
+					<div class="services-card">
+						<div class="services-card__text-wrapper">
+							<h3 class="services-card__caption">Feel Like A Star</h3>
+							<p class="services-card__description">
+								Quisque hendrerit purus dapibus, ornare nibh vitae, viverra
+								nibh. Fusce vitae aliquam tellus.
+							</p>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
@@ -293,10 +345,10 @@
 							Contact Information
 						</h3>
 						<div class="communication-block__contacts-motto">
-							Quisque hendrerit purus dapibus, ornare nibh vitae, viver &shy; ra
-							nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero.
-							Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
-							et consequat felis.
+							Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit
+							amet volutpat
+							libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
+
 						</div>
 
 						<a class="communication-block__contacts-data

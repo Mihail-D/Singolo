@@ -152,3 +152,31 @@ modalSubmitButton.addEventListener("click",function ()
 	mailField.value = '';
 	modalBlock.classList.add("visually-hidden");
 });
+
+//вращение иконки меню
+// вызов - сокрытие меню
+
+let menuIcon = document.querySelector('.burger-menu__button');
+let mobileMenu = document.querySelector('.mobile-menu');
+let mobileNav = document.querySelector('.mobile-nav');
+let menuItem = mobileNav.querySelector('.mobile-nav__link');
+let body = document.querySelector('body');
+
+menuIcon.addEventListener("click",function ()
+{
+	menuIcon.classList.toggle('burger-menu__button--rotate')
+	mobileMenu.classList.toggle('visually-hidden')
+	
+});
+
+
+// переключение элементов главного меню
+
+mobileMenu.addEventListener("click",event =>
+{
+	mobileMenu.querySelectorAll("a").forEach(el =>
+		el.classList.remove("mobile-nav__link--active")
+	);
+	event.target.classList.add("mobile-nav__link--active");
+	mobileMenu.classList.add('visually-hidden');
+});
