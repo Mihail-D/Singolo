@@ -159,14 +159,14 @@ modalSubmitButton.addEventListener("click",function ()
 let menuIcon = document.querySelector('.burger-menu__button');
 let mobileMenu = document.querySelector('.mobile-menu');
 let mobileNav = document.querySelector('.mobile-nav');
-let menuItem = mobileNav.querySelector('.mobile-nav__link');
-let body = document.querySelector('body');
+let menuItem = document.querySelector('.mobile-nav__link');
+
 
 menuIcon.addEventListener("click",function ()
 {
 	menuIcon.classList.toggle('burger-menu__button--rotate')
 	mobileMenu.classList.toggle('visually-hidden')
-	
+
 });
 
 
@@ -179,4 +179,5 @@ mobileMenu.addEventListener("click",event =>
 	);
 	event.target.classList.add("mobile-nav__link--active");
 	mobileMenu.classList.add('visually-hidden');
+	menuIcon.classList.toggle('burger-menu__button--rotate')
 });
