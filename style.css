@@ -47,20 +47,6 @@ input[type="radio"].visually-hidden {
 	display: none;
 }
 
-	.mobile-nav {
-		display: none;
-	}
-	.mobile-nav__item {
-		display: none;
-	}
-	.mobile-nav__link {
-		display: none;
-	}
-
-	.mobile-nav__link--active {
-		display: none;
-	}
-
 .main-header__logo {
 	position: relative;
 	margin-left: 40px;

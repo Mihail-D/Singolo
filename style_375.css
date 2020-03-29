@@ -5,6 +5,10 @@
 		overflow-x: hidden;
 	}
 
+	.mobile-menu-anchor {
+		position: relative;
+	}
+
 	.body-shadow {
 		position: absolute;
 		top: 0;
