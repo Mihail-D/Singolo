@@ -160,13 +160,12 @@ let menuIcon = document.querySelector('.burger-menu__button');
 let mobileMenu = document.querySelector('.mobile-menu');
 let mobileNav = document.querySelector('.mobile-nav');
 let menuItem = document.querySelector('.mobile-nav__link');
-
+let body = document.querySelector('body');
 
 menuIcon.addEventListener("click",function ()
 {
 	menuIcon.classList.toggle('burger-menu__button--rotate')
 	mobileMenu.classList.toggle('visually-hidden')
-
 });
 
 
