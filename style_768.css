@@ -7,9 +7,23 @@
 		height: 89px;
 	}
 
-.burger-menu__button {
-	display: none;
-}
+	.burger-menu__button {
+		display: none;
+	}
+
+	.mobile-nav {
+		display: none;
+	}
+	.mobile-nav__item {
+		display: none;
+	}
+	.mobile-nav__link {
+		display: none;
+	}
+
+	.mobile-nav__link--active {
+		display: none;
+	}
 
 	.main-header__logo {
 		margin-left: 40px;
